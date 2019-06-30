@@ -20,6 +20,9 @@ package de.schildbach.pte.service.rest;
 import java.io.IOException;
 import java.util.Date;
 
+import de.schildbach.pte.KvvProvider;
+import de.schildbach.pte.NetworkProvider;
+import de.schildbach.pte.service.framework.source.SourceResolver;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -36,7 +39,7 @@ import de.schildbach.pte.dto.QueryTripsResult;
  */
 @Controller
 public class TripController {
-    private final RtProvider provider = new RtProvider();
+    private SourceResolver resolver = new SourceResolver();
 
     @RequestMapping(value = "/trip", method = RequestMethod.GET)
     @ResponseBody
@@ -46,7 +49,9 @@ public class TripController {
             @RequestParam(value = "fromId", required = false) final String fromId,
             @RequestParam(value = "toType", required = false, defaultValue = "ANY") final LocationType toType,
             @RequestParam(value = "to", required = false) final String to,
-            @RequestParam(value = "toId", required = false) final String toId) throws IOException {
+            @RequestParam(value = "toId", required = false) final String toId,
+            @RequestParam("source") final String source) throws IOException {
+        NetworkProvider provider = resolver.getSource(source);
         final Location fromLocation = new Location(fromType, fromId, null, from);
         final Location toLocation = new Location(toType, toId, null, to);
         return provider.queryTrips(fromLocation, null, toLocation, new Date(), true, null);
