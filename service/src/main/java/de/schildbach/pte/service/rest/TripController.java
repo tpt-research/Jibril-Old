@@ -1,5 +1,5 @@
 /*
- * Copyright 2012-2015 the original author or authors.
+ * Copyright the original author or authors.
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -15,10 +15,10 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package de.schildbach.pte.service;
+package de.schildbach.pte.service.rest;
 
 import java.io.IOException;
-import java.util.EnumSet;
+import java.util.Date;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -29,27 +29,26 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import de.schildbach.pte.RtProvider;
 import de.schildbach.pte.dto.Location;
 import de.schildbach.pte.dto.LocationType;
-import de.schildbach.pte.dto.NearbyLocationsResult;
-import de.schildbach.pte.dto.SuggestLocationsResult;
+import de.schildbach.pte.dto.QueryTripsResult;
 
 /**
  * @author Andreas Schildbach
  */
 @Controller
-public class LocationController {
+public class TripController {
     private final RtProvider provider = new RtProvider();
 
-    @RequestMapping(value = "/location/suggest", method = RequestMethod.GET)
+    @RequestMapping(value = "/trip", method = RequestMethod.GET)
     @ResponseBody
-    public SuggestLocationsResult suggest(@RequestParam("q") final String query) throws IOException {
-        return provider.suggestLocations(query);
-    }
-
-    @RequestMapping(value = "/location/nearby", method = RequestMethod.GET)
-    @ResponseBody
-    public NearbyLocationsResult nearby(@RequestParam("lat") final int lat, @RequestParam("lon") final int lon)
-            throws IOException {
-        final Location coord = Location.coord(lat, lon);
-        return provider.queryNearbyLocations(EnumSet.of(LocationType.STATION, LocationType.POI), coord, 5000, 100);
+    public QueryTripsResult trip(
+            @RequestParam(value = "fromType", required = false, defaultValue = "ANY") final LocationType fromType,
+            @RequestParam(value = "from", required = false) final String from,
+            @RequestParam(value = "fromId", required = false) final String fromId,
+            @RequestParam(value = "toType", required = false, defaultValue = "ANY") final LocationType toType,
+            @RequestParam(value = "to", required = false) final String to,
+            @RequestParam(value = "toId", required = false) final String toId) throws IOException {
+        final Location fromLocation = new Location(fromType, fromId, null, from);
+        final Location toLocation = new Location(toType, toId, null, to);
+        return provider.queryTrips(fromLocation, null, toLocation, new Date(), true, null);
     }
 }
