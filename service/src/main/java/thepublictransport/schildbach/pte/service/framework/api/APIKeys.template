@@ -1,0 +1,5 @@
+package thepublictransport.schildbach.pte.service.framework.api
+
+object APIKeys {
+    val NAVITIA_APIKEY = ""
+}

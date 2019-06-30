@@ -2,7 +2,7 @@ Public Transport Enabler
 ========================
 
 This is a Java library allowing you to get data from public transport providers.
-Look into [NetworkProvider.java](https://github.com/schildbach/public-transport-enabler/blob/master/enabler/src/de/schildbach/pte/NetworkProvider.java) for an overview of the API.
+Look into [NetworkProvider.java](https://github.com/schildbach/public-transport-enabler/blob/master/enabler/src/thepublictransport/schildbach/pte/NetworkProvider.java) for an overview of the API.
 
 Using providers that require secrets
 ------------------------------------
@@ -10,7 +10,7 @@ Using providers that require secrets
 For some providers a secret like an API key is required to use their API.
 Copy the `secrets.properties.template` file to `secrets.properties` like so:
 
-    $ cp test/de/schildbach/pte/live/secrets.properties.template test/de/schildbach/pte/live/secrets.properties
+    $ cp test/thepublictransport/schildbach/pte/live/secrets.properties.template test/thepublictransport/schildbach/pte/live/secrets.properties
 
 You need to request the secrets directly from the provider. For Navitia based providers, you can [request a secret here](http://www.navitia.io/register).
 

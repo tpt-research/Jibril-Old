@@ -15,7 +15,7 @@ plugins {
 apply plugin: 'io.spring.dependency-management'
 apply plugin: 'kotlin'
 
-group = 'de.schildbach.pte.service'
+group = 'thepublictransport.schildbach.pte.service'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 

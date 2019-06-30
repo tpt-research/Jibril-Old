@@ -2,7 +2,7 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'maven'
 
-group = 'de.schildbach.pte'
+group = 'thepublictransport.schildbach.pte'
 archivesBaseName = 'public-transport-enabler'
 
 dependencies {
@@ -35,5 +35,5 @@ compileJava {
 }
 
 test {
-    exclude 'de/schildbach/pte/live/**'
+    exclude 'thepublictransport/schildbach/pte/live/**'
 }
