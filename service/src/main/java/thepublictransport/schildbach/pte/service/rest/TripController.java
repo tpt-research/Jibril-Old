@@ -70,9 +70,8 @@ public class TripController {
         ObjectMapper mapper = new ObjectMapper();
         mapper.setSerializationInclusion(JsonInclude.Include.ALWAYS);
         mapper.enable(DeserializationFeature.ACCEPT_EMPTY_STRING_AS_NULL_OBJECT);
-        String mapped = mapper.writeValueAsString(provider.queryTrips(fromLocation, null, toLocation, date, true, TripOptionResolver.INSTANCE.optionBuilder(accessibility, optimization, walkspeed)));
 
-        return mapped;
+        return mapper.writeValueAsString(provider.queryTrips(fromLocation, null, toLocation, date, true, TripOptionResolver.INSTANCE.optionBuilder(accessibility, optimization, walkspeed)));
     }
 
 }
