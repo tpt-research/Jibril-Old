@@ -38,7 +38,7 @@ import java.util.Date;
 public class DepartureController {
     private SourceResolver resolver = new SourceResolver();
 
-    @RequestMapping(value = "/departure", method = RequestMethod.GET)
+    @RequestMapping(value = "/api/departure", method = RequestMethod.GET)
     @ResponseBody
     public QueryDeparturesResult suggest(@RequestParam("stationId") final String query,
                                          @RequestParam(value = "source", defaultValue = "None", required = false) final String source,

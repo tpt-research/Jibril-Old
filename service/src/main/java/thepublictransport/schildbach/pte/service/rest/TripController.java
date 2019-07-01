@@ -39,7 +39,7 @@ import thepublictransport.schildbach.pte.service.framework.tripoptions.TripOptio
 public class TripController {
     private SourceResolver resolver = new SourceResolver();
 
-    @RequestMapping(value = "/trip", method = RequestMethod.GET, produces = { MediaType.APPLICATION_JSON_VALUE })
+    @RequestMapping(value = "/api/trip", method = RequestMethod.GET, produces = { MediaType.APPLICATION_JSON_VALUE })
     @ResponseBody
     @JsonInclude(JsonInclude.Include.NON_NULL)
     public String trip(
