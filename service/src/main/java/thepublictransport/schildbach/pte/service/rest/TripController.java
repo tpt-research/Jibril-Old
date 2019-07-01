@@ -18,43 +18,61 @@
 package thepublictransport.schildbach.pte.service.rest;
 
 import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.*;
 import thepublictransport.schildbach.pte.NetworkProvider;
-import thepublictransport.schildbach.pte.dto.TripOptions;
+import thepublictransport.schildbach.pte.dto.*;
 import thepublictransport.schildbach.pte.service.framework.source.SourceResolver;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-
-import thepublictransport.schildbach.pte.dto.Location;
-import thepublictransport.schildbach.pte.dto.LocationType;
-import thepublictransport.schildbach.pte.dto.QueryTripsResult;
+import thepublictransport.schildbach.pte.service.framework.tripoptions.TripOptionResolver;
 
 /**
- * @author Andreas Schildbach
+ * @author Andreas Schildbach & Tristan Marsell
  */
-@Controller
+@RestController
 public class TripController {
     private SourceResolver resolver = new SourceResolver();
 
-    @RequestMapping(value = "/trip", method = RequestMethod.GET)
+    @RequestMapping(value = "/trip", method = RequestMethod.GET, produces = { MediaType.APPLICATION_JSON_VALUE })
     @ResponseBody
-    public QueryTripsResult trip(
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    public String trip(
             @RequestParam(value = "fromType", required = false, defaultValue = "ANY") final LocationType fromType,
             @RequestParam(value = "from", required = false) final String from,
             @RequestParam(value = "fromId", required = false) final String fromId,
             @RequestParam(value = "toType", required = false, defaultValue = "ANY") final LocationType toType,
             @RequestParam(value = "to", required = false) final String to,
             @RequestParam(value = "toId", required = false) final String toId,
+            @RequestParam(value = "when", required = false) final String when,
+            @RequestParam(value = "accessibility", required = false, defaultValue = "NEUTRAL") final String accessibility,
+            @RequestParam(value = "optimization", required = false, defaultValue = "LEAST_DURATION") final String optimization,
+            @RequestParam(value = "walkspeed", required = false, defaultValue = "NORMAL") final String walkspeed,
             @RequestParam(value = "source", defaultValue = "None") final String source) throws IOException {
         NetworkProvider provider = resolver.getSource(source);
         final Location fromLocation = new Location(fromType, fromId, null, from);
         final Location toLocation = new Location(toType, toId, null, to);
-        TripOptions options = new TripOptions();
-        return provider.queryTrips(fromLocation, null, toLocation, new Date(), true, null);
+
+        Date date;
+        SimpleDateFormat format = new SimpleDateFormat("dd.MM.yyyy'T'HH:mm:ss");
+
+        try {
+            date = format.parse(when);
+        } catch (ParseException e) {
+            date = new Date();
+        }
+
+        ObjectMapper mapper = new ObjectMapper();
+        mapper.setSerializationInclusion(JsonInclude.Include.ALWAYS);
+        mapper.enable(DeserializationFeature.ACCEPT_EMPTY_STRING_AS_NULL_OBJECT);
+        String mapped = mapper.writeValueAsString(provider.queryTrips(fromLocation, null, toLocation, date, true, TripOptionResolver.INSTANCE.optionBuilder(accessibility, optimization, walkspeed)));
+
+        return mapped;
     }
 
 }

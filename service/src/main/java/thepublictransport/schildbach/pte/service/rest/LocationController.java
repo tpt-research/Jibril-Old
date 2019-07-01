@@ -40,14 +40,14 @@ import thepublictransport.schildbach.pte.dto.SuggestLocationsResult;
 public class LocationController {
     private SourceResolver resolver = new SourceResolver();
 
-    @RequestMapping(value = "/location/suggest", method = RequestMethod.GET)
+    @RequestMapping(value = "/suggest", method = RequestMethod.GET)
     @ResponseBody
     public SuggestLocationsResult suggest(@RequestParam("q") final String query, @RequestParam(value = "source", defaultValue = "None", required = false) final String source) throws IOException {
         NetworkProvider provider = resolver.getSource(source);
         return provider.suggestLocations(query, null, 10);
     }
 
-    @RequestMapping(value = "/location/nearby", method = RequestMethod.GET)
+    @RequestMapping(value = "/nearby", method = RequestMethod.GET)
     @ResponseBody
     public NearbyLocationsResult nearby(@RequestParam(value = "source", defaultValue = "None", required = false) final String source, @RequestParam("lat") final int lat, @RequestParam("lon") final int lon)
             throws IOException {

@@ -97,19 +97,35 @@ public final class Location implements Serializable {
     }
 
     public double getLatAsDouble() {
-        return coord.getLatAsDouble();
+        if (coord != null) {
+            return coord.getLatAsDouble();
+        } else {
+            return 0;
+        }
     }
 
     public double getLonAsDouble() {
-        return coord.getLonAsDouble();
+        if (coord != null) {
+            return coord.getLonAsDouble();
+        } else {
+            return 0;
+        }
     }
 
     public int getLatAs1E6() {
-        return coord.getLatAs1E6();
+        if (coord != null) {
+            return coord.getLatAs1E6();
+        } else {
+            return 0;
+        }
     }
 
     public int getLonAs1E6() {
-        return coord.getLonAs1E6();
+        if (coord != null) {
+            return coord.getLonAs1E6();
+        } else {
+            return 0;
+        }
     }
 
     public final boolean hasName() {

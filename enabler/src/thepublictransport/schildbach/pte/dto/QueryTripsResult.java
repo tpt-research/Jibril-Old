@@ -17,6 +17,8 @@
 
 package thepublictransport.schildbach.pte.dto;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 import static com.google.common.base.Preconditions.checkNotNull;
 
 import java.io.Serializable;
@@ -30,6 +32,8 @@ import com.google.common.base.MoreObjects.ToStringHelper;
 /**
  * @author Andreas Schildbach
  */
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
 @SuppressWarnings("serial")
 public final class QueryTripsResult implements Serializable {
     public enum Status {

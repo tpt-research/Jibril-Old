@@ -3,227 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="15a54322-8679-4d82-8705-cd4009d2cc67" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/enabler/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/AbstractEfaProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/AbstractEfaProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/AbstractHafasClientInterfaceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/AbstractHafasClientInterfaceProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/AbstractHafasLegacyProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/AbstractHafasLegacyProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/AbstractHafasProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/AbstractHafasProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/AbstractNavitiaProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/AbstractNavitiaProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/AbstractNetworkProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/AbstractNetworkProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/AustraliaProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/AustraliaProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/AvvAachenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/AvvAachenProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/AvvAugsburgProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/AvvAugsburgProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/AvvProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/AvvProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/BayernProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/BayernProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/BritishColumbiaProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/BritishColumbiaProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/BsvagProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/BsvagProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/BvgProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/BvgProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/CmtaProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/CmtaProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/DbProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/DbProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/DingProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/DingProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/DsbProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/DsbProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/DubProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/DubProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/EireannProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/EireannProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/FinlandProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/FinlandProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/FranceNorthEastProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/FranceNorthEastProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/FranceNorthWestProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/FranceNorthWestProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/FranceSouthEastProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/FranceSouthEastProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/FranceSouthWestProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/FranceSouthWestProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/GhanaProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/GhanaProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/GvhProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/GvhProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/InvgProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/InvgProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/ItalyProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/ItalyProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/KvvProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/KvvProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/LinzProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/LinzProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/LocationUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/LocationUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/LuProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/LuProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/MassachusettsProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/MassachusettsProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/MerseyProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/MerseyProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/MvgProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/MvgProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/MvvProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/MvvProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/NasaProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/NasaProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/NegentweeProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/NegentweeProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/NetworkId.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/NetworkId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/NetworkProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/NetworkProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/NicaraguaProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/NicaraguaProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/NsProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/NsProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/NvbwProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/NvbwProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/NvvProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/NvvProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/NzProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/NzProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/OebbProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/OebbProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/OntarioProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/OntarioProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/OoevvProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/OoevvProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/OregonProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/OregonProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/ParisProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/ParisProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/PlNavitiaProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/PlNavitiaProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/PlProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/PlProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/QuebecProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/QuebecProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/RtProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/RtProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/RtaChicagoProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/RtaChicagoProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/SbbProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/SbbProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/SeProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/SeProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/ShProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/ShProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/SncbProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/SncbProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/SpainProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/SpainProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/Standard.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/Standard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/StvProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/StvProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/SvvProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/SvvProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/SydneyProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/SydneyProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/TfiProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/TfiProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/TlemProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/TlemProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/VaoProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/VaoProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/VbbProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/VbbProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/VblProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/VblProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/VbnProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/VbnProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/VgnProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/VgnProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/VgsProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/VgsProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/VmobilProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/VmobilProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/VmsProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/VmsProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/VmtProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/VmtProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/VmvProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/VmvProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/VorProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/VorProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/VrnProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/VrnProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/VrrProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/VrrProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/VrsProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/VrsProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/VvmProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/VvmProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/VvoProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/VvoProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/VvsProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/VvsProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/VvtProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/VvtProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/VvvProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/VvvProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/WienProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/WienProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/ZvvProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/ZvvProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/dto/Departure.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/Departure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/dto/Fare.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/Fare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/dto/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/Line.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/dto/LineDestination.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/LineDestination.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/dto/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/dto/LocationType.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/LocationType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/dto/NearbyLocationsResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/NearbyLocationsResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/dto/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/dto/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/Position.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/dto/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/dto/QueryDeparturesResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/QueryDeparturesResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/dto/QueryTripsContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/QueryTripsContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/dto/QueryTripsResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/QueryTripsResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/dto/ResultHeader.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/ResultHeader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/dto/StationDepartures.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/StationDepartures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/dto/Stop.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/Stop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/dto/Style.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/Style.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/dto/SuggestLocationsResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/SuggestLocationsResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/dto/SuggestedLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/SuggestedLocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/dto/Trip.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/Trip.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/dto/TripOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/TripOptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/exception/AbstractHttpException.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/exception/AbstractHttpException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/exception/BlockedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/exception/BlockedException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/exception/InternalErrorException.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/exception/InternalErrorException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/exception/InvalidDataException.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/exception/InvalidDataException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/exception/NotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/exception/NotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/exception/ParserException.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/exception/ParserException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/exception/SessionExpiredException.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/exception/SessionExpiredException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/exception/UnexpectedRedirectException.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/exception/UnexpectedRedirectException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/util/CharQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/util/CharQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/util/HttpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/util/HttpClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/util/LittleEndianDataInputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/util/LittleEndianDataInputStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/util/ParserUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/util/ParserUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/util/PolylineFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/util/PolylineFormat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/util/StringReplaceReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/util/StringReplaceReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/util/WordUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/util/WordUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/src/de/schildbach/pte/util/XmlPullUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/util/XmlPullUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/dto/StyleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/dto/StyleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/dto/TripTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/dto/TripTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/AbstractNavitiaProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/AbstractNavitiaProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/AbstractProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/AbstractProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/AustraliaProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/AustraliaProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/AvvAachenProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/AvvAachenProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/AvvAugsburgProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/AvvAugsburgProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/AvvProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/AvvProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/BayernProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/BayernProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/BritishColumbiaProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/BritishColumbiaProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/BsvagProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/BsvagProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/BvgProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/BvgProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/CmtaProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/CmtaProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/DbProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/DbProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/DingProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/DingProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/DsbProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/DsbProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/DubProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/DubProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/EireannProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/EireannProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/FinlandProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/FinlandProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/FranceNorthEastProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/FranceNorthEastProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/FranceNorthWestProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/FranceNorthWestProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/FranceSouthEastProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/FranceSouthEastProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/FranceSouthWestProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/FranceSouthWestProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/GhanaProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/GhanaProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/GvhProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/GvhProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/InvgProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/InvgProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/ItalyProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/ItalyProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/KvvProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/KvvProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/LinzProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/LinzProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/LuProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/LuProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/MassachusettsProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/MassachusettsProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/MerseyProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/MerseyProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/MvgProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/MvgProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/MvvProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/MvvProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/NasaProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/NasaProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/NegentweeProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/NegentweeProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/NicaraguaProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/NicaraguaProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/NsProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/NsProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/NvbwProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/NvbwProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/NvvProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/NvvProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/NzProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/NzProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/OebbProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/OebbProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/OntarioProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/OntarioProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/OoevvProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/OoevvProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/OregonProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/OregonProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/ParisProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/ParisProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/PlNavitiaProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/PlNavitiaProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/PlProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/PlProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/QuebecProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/QuebecProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/RtProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/RtProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/RtaChicagoProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/RtaChicagoProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/SbbProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/SbbProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/SeProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/SeProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/ShProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/ShProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/SncbProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/SncbProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/SpainProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/SpainProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/StvProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/StvProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/SvvProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/SvvProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/SydneyProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/SydneyProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/TfiProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/TfiProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/TlemProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/TlemProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/VaoProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VaoProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/VbbProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VbbProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/VblProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VblProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/VbnProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VbnProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/VgnProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VgnProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/VgsProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VgsProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/VmobilProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VmobilProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/VmsProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VmsProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/VmtProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VmtProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/VmvProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VmvProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/VorProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VorProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/VrnProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VrnProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/VrrProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VrrProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/VrsProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VrsProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/VvmProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VvmProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/VvoProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VvoProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/VvsProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VvsProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/VvtProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VvtProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/VvvProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VvvProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/WienProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/WienProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/ZvvProviderLiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/ZvvProviderLiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/secrets.properties.template" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/secrets.properties.template" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/util/HttpClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/util/HttpClientTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/util/Iso8601Format.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/util/Iso8601Format.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/de/schildbach/pte/util/PolylineFormatTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/util/PolylineFormatTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/service/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/de/schildbach/pte/service/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/MainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/de/schildbach/pte/service/framework/source/SourceResolver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/source/SourceResolver.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/de/schildbach/pte/service/rest/LocationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/LocationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/de/schildbach/pte/service/rest/TripController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/TripController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/QueryTripsResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/QueryTripsResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/TripController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/TripController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -253,17 +36,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/TripController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="49" column="40" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/LocationController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="44" column="152" selection-start-line="44" selection-start-column="152" selection-end-line="44" selection-end-column="152" />
+            <state relative-caret-position="538">
+              <caret line="72" column="23" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -271,50 +45,89 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/source/SourceResolver.kt">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/Departure.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="227" column="26" selection-start-line="227" selection-start-column="26" selection-end-line="227" selection-end-column="26" />
+            <state relative-caret-position="236">
+              <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/QueryDeparturesResult.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-68">
+              <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/DepartureController.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/QueryTripsResult.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
               <folding>
-                <element signature="e#68#181#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1055#1082#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/api/APIKeys.kt">
+        <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/Location.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="62" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
+            <state relative-caret-position="1350">
+              <caret line="127" column="9" selection-start-line="127" selection-start-column="9" selection-end-line="127" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/api/APIKeys.template">
+        <entry file="file://$PROJECT_DIR$/service/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+            <state relative-caret-position="393">
+              <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/.gitignore">
+        <entry file="file://$PROJECT_DIR$/enabler/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="81" selection-start-line="4" selection-start-column="81" selection-end-line="4" selection-end-column="81" />
+            <state relative-caret-position="195">
+              <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/src/main/resources/application.properties">
+        <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/AbstractHafasClientInterfaceProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
+            <state relative-caret-position="-1057">
+              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/tripoptions/TripOptionResolver.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+              <folding>
+                <element signature="e#73#239#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -325,9 +138,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Kotlin Class" />
         <option value="Kotlin File" />
         <option value="Kotlin Object" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -355,9 +168,16 @@
         <option value="$PROJECT_DIR$/service/src/main/java/de/schildbach/pte/service/rest/LocationController.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/de/thepublictransport/pte/service/framework/source/SourceResolver.kt" />
         <option value="$PROJECT_DIR$/service/src/main/java/de/schildbach/pte/service/framework/source/SourceResolver.kt" />
-        <option value="$PROJECT_DIR$/service/.gitignore" />
         <option value="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/api/APIKeys.kt" />
         <option value="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/source/SourceResolver.kt" />
+        <option value="$PROJECT_DIR$/service/.gitignore" />
+        <option value="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/tripoptions/TripOptionResolver.kt" />
+        <option value="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/Point.java" />
+        <option value="$PROJECT_DIR$/enabler/build.gradle" />
+        <option value="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/QueryTripsResult.java" />
+        <option value="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/Location.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/TripController.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/DepartureController.java" />
       </list>
     </option>
   </component>
@@ -414,6 +234,16 @@
               <item name="thepublictransport" type="462c0819:PsiDirectoryNode" />
               <item name="schildbach" type="462c0819:PsiDirectoryNode" />
               <item name="pte" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="public-transport-enabler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="public-transport-enabler" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="enabler" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="thepublictransport" type="462c0819:PsiDirectoryNode" />
+              <item name="schildbach" type="462c0819:PsiDirectoryNode" />
+              <item name="pte" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="public-transport-enabler" type="b2602c69:ProjectViewProjectNode" />
@@ -567,6 +397,7 @@
       <recent name="thepublictransport.schildbach.pte.service.framework.api" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="thepublictransport.schildbach.pte.service.rest" />
       <recent name="de.schildbach.pte.live" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -642,7 +473,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49809885" visible="true" weight="0.2639485" />
       <window_info id="Structure" order="1" sideWeight="0.50190115" side_tool="true" weight="0.2639485" />
@@ -659,7 +489,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49427754" weight="0.3299363" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49427754" visible="true" weight="0.3299363" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50572246" side_tool="true" weight="0.3299363" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Build" order="10" sideWeight="0.49785408" weight="0.31082803" />
@@ -678,174 +508,6 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/NvbwProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/NzProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/OebbProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/OntarioProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/OoevvProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/OregonProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/ParisProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/PlNavitiaProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/PlProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/QuebecProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/RtaChicagoProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/SbbProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/SeProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/ShProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/SncbProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/SpainProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/StvProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/SvvProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/SydneyProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/TfiProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/TlemProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/VaoProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/VbbProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/VblProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/VbnProvider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -979,30 +641,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/TripController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="49" column="40" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/BvgProvider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2971">
           <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/build.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/LocationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="44" column="152" selection-start-line="44" selection-start-column="152" selection-end-line="44" selection-end-column="152" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1013,13 +655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="81" selection-start-line="4" selection-start-column="81" selection-end-line="4" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/api/APIKeys.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -1027,15 +662,227 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/service/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/TripOptions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="65" column="11" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/QueryTripsContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/AbstractHafasProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-978">
+          <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/source/SourceResolver.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="227" column="26" selection-start-line="227" selection-start-column="26" selection-end-line="227" selection-end-column="26" />
+        <state relative-caret-position="-1582">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
           <folding>
             <element signature="e#68#181#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/NetworkProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/MassachusettsProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/LocationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="49" column="47" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/LocationType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/tripoptions/TripOptionResolver.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#73#239#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/AbstractNetworkProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/util/HttpClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3976">
+          <caret line="73" column="19" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/NetworkId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-47">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/LocationUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/AbstractHafasClientInterfaceProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1057">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/Trip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4739">
+          <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VorProviderLiveTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enabler/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1225#1226#0" expanded="true" />
+            <element signature="e#1267#1268#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/Location.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="127" column="9" selection-start-line="127" selection-start-column="9" selection-end-line="127" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/QueryTripsResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1055#1082#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/TripController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="72" column="23" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/28.0-android/ab4ebd3fc8af202a1a8cf5d22eaa424218c6e4c/guava-28.0-android-sources.jar!/com/google/common/base/Preconditions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="887" column="37" selection-start-line="887" selection-start-column="37" selection-end-line="887" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/Departure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/QueryDeparturesResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/DepartureController.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
