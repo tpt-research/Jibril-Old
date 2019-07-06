@@ -1,5 +1,5 @@
 /*
- * Copyright 2012-2015 the original author or authors.
+ * Copyright 2012-2019 the original author or authors.
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -17,11 +17,9 @@
 
 package thepublictransport.schildbach.pte.service.rest;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 import thepublictransport.schildbach.pte.NetworkProvider;
 import thepublictransport.schildbach.pte.dto.QueryDeparturesResult;
 import thepublictransport.schildbach.pte.service.framework.source.SourceResolver;
@@ -34,16 +32,17 @@ import java.util.Date;
 /**
  * @author Tristan Marsell
  */
-@Controller
+@RestController
 public class DepartureController {
     private SourceResolver resolver = new SourceResolver();
 
+    @Cacheable(value = "requests", key = "#query + #source + #when + #limit.toString() + #equiv.toString()", sync = true)
     @RequestMapping(value = "/api/departure", method = RequestMethod.GET)
     @ResponseBody
-    public QueryDeparturesResult suggest(@RequestParam("stationId") final String query,
+    public ResponseEntity<QueryDeparturesResult> suggest(@RequestParam("stationId") final String query,
                                          @RequestParam(value = "source", defaultValue = "None", required = false) final String source,
                                          @RequestParam(value = "when", required = false) final String when,
-                                         @RequestParam(value = "limit", required = false) final int limit,
+                                         @RequestParam(value = "limit", required = false, defaultValue = "5") final int limit,
                                          @RequestParam(value = "equiv", required = false) final boolean equiv
     ) throws IOException {
         NetworkProvider provider = resolver.getSource(source);
@@ -57,6 +56,6 @@ public class DepartureController {
             date = new Date();
         }
 
-        return provider.queryDepartures(query, date, limit, equiv);
+        return ResponseEntity.ok().body(provider.queryDepartures(query, date, limit, equiv));
     }
 }

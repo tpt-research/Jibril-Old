@@ -1,5 +1,5 @@
 /*
- * Copyright 2012-2015 the original author or authors.
+ * Copyright 2012-2019 the original author or authors.
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -24,7 +24,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import thepublictransport.schildbach.pte.NetworkProvider;
 import thepublictransport.schildbach.pte.service.framework.source.SourceResolver;
-import org.springframework.stereotype.Controller;
 
 import thepublictransport.schildbach.pte.dto.Location;
 import thepublictransport.schildbach.pte.dto.LocationType;
@@ -34,7 +33,7 @@ import thepublictransport.schildbach.pte.dto.SuggestLocationsResult;
 /**
  * @author Andreas Schildbach & Tristan Marsell
  */
-@Controller
+@RestController
 public class LocationController {
     private SourceResolver resolver = new SourceResolver();
 
