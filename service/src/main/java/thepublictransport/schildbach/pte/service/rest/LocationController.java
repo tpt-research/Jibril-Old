@@ -20,7 +20,9 @@ package thepublictransport.schildbach.pte.service.rest;
 import java.io.IOException;
 import java.util.EnumSet;
 
+import org.springframework.cache.annotation.Cacheable;
 import thepublictransport.schildbach.pte.NetworkProvider;
+import thepublictransport.schildbach.pte.service.framework.cache.GarbageCollector;
 import thepublictransport.schildbach.pte.service.framework.source.SourceResolver;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -40,6 +42,7 @@ import thepublictransport.schildbach.pte.dto.SuggestLocationsResult;
 public class LocationController {
     private SourceResolver resolver = new SourceResolver();
 
+    @Cacheable(value = "requests", key = "#query", sync = true)
     @RequestMapping(value = "/api/suggest", method = RequestMethod.GET)
     @ResponseBody
     public SuggestLocationsResult suggest(@RequestParam("q") final String query, @RequestParam(value = "source", defaultValue = "None", required = false) final String source) throws IOException {
