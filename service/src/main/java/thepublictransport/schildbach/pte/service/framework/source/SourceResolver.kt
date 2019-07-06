@@ -171,6 +171,9 @@ class SourceResolver {
             "SE" -> {
                 return SeProvider("{\"type\":\"AID\",\"aid\":\"h5o3n7f4t2m8l9x1\"}")
             }
+            "AVVAachen" -> {
+                return AvvAachenProvider("{\"type\":\"AID\",\"aid\":\"4vV1AcH3N511icH\"}")
+            }
         }
         return getSourceNavitia(source)
     }
