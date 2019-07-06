@@ -17,18 +17,14 @@
 
 package thepublictransport.schildbach.pte.service.rest;
 
-import java.io.IOException;
 import java.util.EnumSet;
 
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 import thepublictransport.schildbach.pte.NetworkProvider;
-import thepublictransport.schildbach.pte.service.framework.cache.GarbageCollector;
 import thepublictransport.schildbach.pte.service.framework.source.SourceResolver;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import thepublictransport.schildbach.pte.dto.Location;
 import thepublictransport.schildbach.pte.dto.LocationType;
@@ -42,20 +38,23 @@ import thepublictransport.schildbach.pte.dto.SuggestLocationsResult;
 public class LocationController {
     private SourceResolver resolver = new SourceResolver();
 
-    @Cacheable(value = "requests", key = "#query", sync = true)
+    @Cacheable(value = "requests", key = "#query + #source", sync = true)
     @RequestMapping(value = "/api/suggest", method = RequestMethod.GET)
     @ResponseBody
-    public SuggestLocationsResult suggest(@RequestParam("q") final String query, @RequestParam(value = "source", defaultValue = "None", required = false) final String source) throws IOException {
+    public ResponseEntity<SuggestLocationsResult> suggest(@RequestParam("q") final String query,
+                                  @RequestParam(value = "source", defaultValue = "None", required = false) final String source) throws Exception {
         NetworkProvider provider = resolver.getSource(source);
-        return provider.suggestLocations(query, null, 10);
+
+        return ResponseEntity.ok().body(provider.suggestLocations(query, null, 10));
     }
 
+    @Cacheable(value = "requests", key = "{#source + #lat.toString() + #lon.toString()}", sync = true)
     @RequestMapping(value = "/api/nearby", method = RequestMethod.GET)
     @ResponseBody
-    public NearbyLocationsResult nearby(@RequestParam(value = "source", defaultValue = "None", required = false) final String source, @RequestParam("lat") final int lat, @RequestParam("lon") final int lon)
-            throws IOException {
+    public ResponseEntity<NearbyLocationsResult> nearby(@RequestParam(value = "source", defaultValue = "None", required = false) final String source,
+                                        @RequestParam("lat") final int lat, @RequestParam("lon") final int lon) throws Exception {
         NetworkProvider provider = resolver.getSource(source);
         final Location coord = Location.coord(lat, lon);
-        return provider.queryNearbyLocations(EnumSet.of(LocationType.STATION, LocationType.POI), coord, 5000, 100);
+        return ResponseEntity.ok().body(provider.queryNearbyLocations(EnumSet.of(LocationType.STATION, LocationType.POI), coord, 5000, 100));
     }
 }

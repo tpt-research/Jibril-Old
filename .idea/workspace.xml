@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="15a54322-8679-4d82-8705-cd4009d2cc67" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/MainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/source/SourceResolver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/source/SourceResolver.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/service/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/LocationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/LocationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/TripController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/TripController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -32,65 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/source/SourceResolver.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="175" column="13" selection-start-line="175" selection-start-column="13" selection-end-line="175" selection-end-column="13" />
-              <folding>
-                <element signature="e#68#181#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/cache/GarbageCollector.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-              <folding>
-                <element signature="e#67#173#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/MainApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/cache/CacheManagement.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/CachingConfig.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-              <folding>
-                <element signature="e#51#284#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/LocationController.java">
+        <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/TripController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="48" column="62" selection-start-line="48" selection-start-column="62" selection-end-line="48" selection-end-column="62" />
+            <state relative-caret-position="449">
+              <caret line="86" column="86" selection-start-line="86" selection-start-column="86" selection-end-line="86" selection-end-column="86" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,10 +45,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/Location.java">
+        <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/LocationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="127" column="9" selection-start-line="127" selection-start-column="9" selection-end-line="127" selection-end-column="9" />
+            <state relative-caret-position="299">
+              <caret line="54" column="110" selection-start-line="54" selection-start-column="110" selection-end-line="54" selection-end-column="110" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -113,8 +62,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Kotlin File" />
         <option value="Kotlin Object" />
+        <option value="Kotlin File" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -134,7 +83,6 @@
         <option value="$PROJECT_DIR$/service/src/main/java/de/schildbach/pte/service/rest/RMV_NVV/KVV/LocationController.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/de/schildbach/pte/service/rest/RMV_NVV/LocationController.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/de/schildbach/pte/service/rest/KVV/LocationController.java" />
-        <option value="$PROJECT_DIR$/service/build.gradle" />
         <option value="$PROJECT_DIR$/enabler/test/de/schildbach/pte/live/RmvProviderLiveTest.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/de/schildbach/pte/service/rest/LocationController.kt" />
         <option value="$PROJECT_DIR$/service/src/main/resources/application.properties" />
@@ -143,14 +91,12 @@
         <option value="$PROJECT_DIR$/service/src/main/java/de/thepublictransport/pte/service/framework/source/SourceResolver.kt" />
         <option value="$PROJECT_DIR$/service/src/main/java/de/schildbach/pte/service/framework/source/SourceResolver.kt" />
         <option value="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/api/APIKeys.kt" />
-        <option value="$PROJECT_DIR$/service/.gitignore" />
         <option value="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/tripoptions/TripOptionResolver.kt" />
         <option value="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/Point.java" />
         <option value="$PROJECT_DIR$/enabler/build.gradle" />
         <option value="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/QueryTripsResult.java" />
         <option value="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/Location.java" />
         <option value="$PROJECT_DIR$/LICENSE.md" />
-        <option value="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/TripController.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/DepartureController.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/source/SourceResolver.kt" />
         <option value="$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/RmvProvider.java" />
@@ -160,7 +106,16 @@
         <option value="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/MainApplication.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/cache/GarbageCollector.kt" />
         <option value="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/cache/CacheManagement.kt" />
+        <option value="$PROJECT_DIR$/service/build.gradle" />
+        <option value="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/keystore/Keys.template" />
+        <option value="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/keystore/Key.kt" />
+        <option value="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/keystore/Keys.kt" />
+        <option value="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/exception/IllegalApikeyException.kt" />
+        <option value="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/keystore/KeyHandler.kt" />
+        <option value="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/TripController.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/LocationController.java" />
+        <option value="$PROJECT_DIR$/service/.gitignore" />
+        <option value="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/SecurityConfig.kt" />
       </list>
     </option>
   </component>
@@ -372,6 +327,23 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="public-transport-enabler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="public-transport-enabler" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="service" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="public-transport-enabler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="public-transport-enabler" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="service" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -391,6 +363,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="thepublictransport.schildbach.pte.service.framework.keystore" />
       <recent name="thepublictransport.schildbach.pte.service.framework.api" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -471,6 +444,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49809885" visible="true" weight="0.27825466" />
       <window_info id="Structure" order="1" sideWeight="0.50190115" side_tool="true" weight="0.2639485" />
@@ -506,69 +480,6 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/ZvvProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/BvgProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2971">
-          <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/api/APIKeys.template">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/api/APIKeys.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="62" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/TripOptions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="65" column="11" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/QueryTripsContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/AbstractHafasProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-978">
-          <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/NetworkProvider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
@@ -781,16 +692,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/RmvProvider.java" />
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/TripController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/enabler/src/thepublictransport/schildbach/pte/dto/QueryTripsResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -803,18 +704,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/source/SourceResolver.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="175" column="13" selection-start-line="175" selection-start-column="13" selection-end-line="175" selection-end-column="13" />
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
           <folding>
             <element signature="e#68#181#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -851,18 +745,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/CachingConfig.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-          <folding>
-            <element signature="e#51#284#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="195">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/MainApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        <state relative-caret-position="210">
+          <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -876,6 +767,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/keystore/Keys.template">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/exception/IllegalApikeyException.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/keystore/Key.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/keystore/KeyHandler.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/keystore/Keys.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="68" lean-forward="true" selection-start-column="68" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="81" selection-start-line="4" selection-start-column="81" selection-end-line="4" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/SecurityConfig.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <element signature="e#51#583#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="30" column="74" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/cache/CacheManagement.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -885,8 +841,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/LocationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="48" column="62" selection-start-line="48" selection-start-column="62" selection-end-line="48" selection-end-column="62" />
+        <state relative-caret-position="299">
+          <caret line="54" column="110" selection-start-line="54" selection-start-column="110" selection-end-line="54" selection-end-column="110" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/TripController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="86" column="86" selection-start-line="86" selection-start-column="86" selection-end-line="86" selection-end-column="86" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
