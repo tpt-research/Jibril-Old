@@ -10,3 +10,6 @@ This project contains several subprojects:
 You can build all sub-projects at once using Gradle:
 
 `gradle clean build`
+
+
+For documentation of the API, take a look on DOCUMENTATION.md

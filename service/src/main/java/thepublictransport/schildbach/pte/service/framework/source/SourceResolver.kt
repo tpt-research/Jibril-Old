@@ -5,7 +5,6 @@ import thepublictransport.schildbach.pte.service.framework.api.APIKeys
 
 
 class SourceResolver {
-
     val navitia_apikey = APIKeys.NAVITIA_APIKEY
 
     fun getSource(source: String): NetworkProvider {

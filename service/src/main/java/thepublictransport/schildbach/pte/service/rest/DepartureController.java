@@ -25,8 +25,7 @@ import thepublictransport.schildbach.pte.dto.QueryDeparturesResult;
 import thepublictransport.schildbach.pte.service.framework.source.SourceResolver;
 
 import java.io.IOException;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -36,26 +35,22 @@ import java.util.Date;
 public class DepartureController {
     private SourceResolver resolver = new SourceResolver();
 
-    @Cacheable(value = "requests", key = "#query + #source + #when + #limit.toString() + #equiv.toString()", sync = true)
-    @RequestMapping(value = "/api/departure", method = RequestMethod.GET)
+    @Cacheable(value = "requests", key = "#query + #source + #hourshift.toString() + #limit.toString() + #equiv.toString()", sync = true)
+    @RequestMapping(value = "/departure", method = RequestMethod.GET)
     @ResponseBody
     public ResponseEntity<QueryDeparturesResult> suggest(@RequestParam("stationId") final String query,
                                          @RequestParam(value = "source", defaultValue = "None", required = false) final String source,
-                                         @RequestParam(value = "when", required = false) final String when,
-                                         @RequestParam(value = "limit", required = false, defaultValue = "5") final int limit,
+                                         @RequestParam(value = "hourshift", required = false, defaultValue = "2") final int hourshift,
+                                         @RequestParam(value = "limit", required = false, defaultValue = "10") final int limit,
                                          @RequestParam(value = "equiv", required = false) final boolean equiv
     ) throws IOException {
         NetworkProvider provider = resolver.getSource(source);
 
-        Date date;
-        SimpleDateFormat format = new SimpleDateFormat("dd.MM.yyyy'T'HH:mm:ss");
 
-        try {
-            date = format.parse(when);
-        } catch (ParseException e) {
-            date = new Date();
-        }
+        Calendar cal = Calendar.getInstance(); // creates calendar
+        cal.setTime(new Date()); // sets calendar time/date
+        cal.add(Calendar.HOUR_OF_DAY, hourshift); // adds one hour
 
-        return ResponseEntity.ok().body(provider.queryDepartures(query, date, limit, equiv));
+        return ResponseEntity.ok().body(provider.queryDepartures(query, cal.getTime(), limit, equiv));
     }
 }

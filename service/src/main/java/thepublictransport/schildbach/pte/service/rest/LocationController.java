@@ -23,37 +23,50 @@ import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import thepublictransport.schildbach.pte.NetworkProvider;
+import thepublictransport.schildbach.pte.dto.*;
 import thepublictransport.schildbach.pte.service.framework.source.SourceResolver;
 
-import thepublictransport.schildbach.pte.dto.Location;
-import thepublictransport.schildbach.pte.dto.LocationType;
-import thepublictransport.schildbach.pte.dto.NearbyLocationsResult;
-import thepublictransport.schildbach.pte.dto.SuggestLocationsResult;
-
 /**
- * @author Andreas Schildbach & Tristan Marsell
+ * @author Andreas Schildbach
+ * @author Tristan Marsell
+ * @author Felix Delattre
  */
 @RestController
 public class LocationController {
     private SourceResolver resolver = new SourceResolver();
 
-    @Cacheable(value = "requests", key = "#query + #source", sync = true)
-    @RequestMapping(value = "/api/suggest", method = RequestMethod.GET)
+    @Cacheable(value = "requests", key = "#query + #source + #maxLocations", sync = true)
+    @RequestMapping(value = "/location/suggest", method = RequestMethod.GET)
     @ResponseBody
-    public ResponseEntity<SuggestLocationsResult> suggest(@RequestParam("q") final String query,
-                                  @RequestParam(value = "source", defaultValue = "None", required = false) final String source) throws Exception {
+    public ResponseEntity<SuggestLocationsResult> suggest(
+            @RequestParam("q") final CharSequence query,
+            @RequestParam(value = "source", defaultValue = "None", required = false) final String source,
+            @RequestParam(value = "types", required = false, defaultValue = "ANY") final EnumSet<LocationType> types,
+            @RequestParam(value = "maxLocations", required = false, defaultValue = "25") final Integer maxLocations
+
+    ) throws Exception {
         NetworkProvider provider = resolver.getSource(source);
 
-        return ResponseEntity.ok().body(provider.suggestLocations(query, null, 10));
+        return ResponseEntity.ok().body(provider.suggestLocations(query, types, maxLocations));
     }
 
-    @Cacheable(value = "requests", key = "{#source + #lat.toString() + #lon.toString()}", sync = true)
-    @RequestMapping(value = "/api/nearby", method = RequestMethod.GET)
+    @Cacheable(value = "requests", key = "{#source + #lat.toString() + #lon.toString() + #maxDistance + #maxLocations}", sync = true)
+    @RequestMapping(value = "/location/nearby", method = RequestMethod.GET)
     @ResponseBody
-    public ResponseEntity<NearbyLocationsResult> nearby(@RequestParam(value = "source", defaultValue = "None", required = false) final String source,
-                                        @RequestParam("lat") final int lat, @RequestParam("lon") final int lon) throws Exception {
+    public ResponseEntity<NearbyLocationsResult> nearby(
+            @RequestParam(value = "source", defaultValue = "None", required = false) final String source,
+            @RequestParam(value = "types", required = false, defaultValue = "ANY") final EnumSet<LocationType> types,
+            @RequestParam("lat") final double lat,
+            @RequestParam("lon") final double lon,
+            @RequestParam(value = "maxDistance", required = false, defaultValue = "5000") final Integer maxDistance,
+            @RequestParam(value = "maxLocations", required = false, defaultValue = "100") final Integer maxLocations
+
+    ) throws Exception {
+
         NetworkProvider provider = resolver.getSource(source);
-        final Location coord = Location.coord(lat, lon);
-        return ResponseEntity.ok().body(provider.queryNearbyLocations(EnumSet.of(LocationType.STATION, LocationType.POI), coord, 5000, 100));
+        final Location coord = Location.coord(Point.fromDouble(lat, lon));
+
+        return ResponseEntity.ok().body(provider.queryNearbyLocations(types, coord, maxDistance, maxLocations));
+
     }
 }

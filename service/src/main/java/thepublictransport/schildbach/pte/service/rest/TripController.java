@@ -32,17 +32,20 @@ import org.springframework.web.bind.annotation.*;
 import thepublictransport.schildbach.pte.NetworkProvider;
 import thepublictransport.schildbach.pte.dto.*;
 import thepublictransport.schildbach.pte.service.framework.source.SourceResolver;
+import thepublictransport.schildbach.pte.service.framework.tools.DateTools;
 import thepublictransport.schildbach.pte.service.framework.tripoptions.TripOptionResolver;
 
 /**
- * @author Andreas Schildbach & Tristan Marsell
+ * @author Andreas Schildbach
+ * @author Tristan Marsell
+ * @author Felix Delattre
  */
 @RestController
 public class TripController {
     private SourceResolver resolver = new SourceResolver();
 
     @Cacheable(value = "requests", key = "{#from + #to + #when + #accessibility + #optimization + #walkspeed + #source}", sync = true)
-    @RequestMapping(value = "/api/trip/name", method = RequestMethod.GET, produces = { MediaType.APPLICATION_JSON_VALUE })
+    @RequestMapping(value = "/trips/name", method = RequestMethod.GET, produces = { MediaType.APPLICATION_JSON_VALUE })
     @ResponseBody
     @JsonInclude(JsonInclude.Include.NON_NULL)
     public ResponseEntity<String> trip(
@@ -52,7 +55,9 @@ public class TripController {
             @RequestParam(value = "accessibility", required = false, defaultValue = "NEUTRAL") final String accessibility,
             @RequestParam(value = "optimization", required = false, defaultValue = "LEAST_DURATION") final String optimization,
             @RequestParam(value = "walkspeed", required = false, defaultValue = "NORMAL") final String walkspeed,
-            @RequestParam(value = "source", defaultValue = "None") final String source) throws IOException {
+            @RequestParam(value = "source", defaultValue = "None") final String source
+    ) throws IOException {
+
         NetworkProvider provider = resolver.getSource(source);
         final Location fromLocation = new Location(LocationType.ANY, null, null, from);
         final Location toLocation = new Location(LocationType.ANY, null, null, to);
@@ -74,7 +79,7 @@ public class TripController {
     }
 
     @Cacheable(value = "requests", key = "{#from + #to + #when + #accessibility + #optimization + #walkspeed + #source}", sync = true)
-    @RequestMapping(value = "/api/trip/id", method = RequestMethod.GET, produces = { MediaType.APPLICATION_JSON_VALUE })
+    @RequestMapping(value = "/trips/id", method = RequestMethod.GET, produces = { MediaType.APPLICATION_JSON_VALUE })
     @ResponseBody
     @JsonInclude(JsonInclude.Include.NON_NULL)
     public ResponseEntity<String> tripId(
@@ -84,25 +89,39 @@ public class TripController {
             @RequestParam(value = "accessibility", required = false, defaultValue = "NEUTRAL") final String accessibility,
             @RequestParam(value = "optimization", required = false, defaultValue = "LEAST_DURATION") final String optimization,
             @RequestParam(value = "walkspeed", required = false, defaultValue = "NORMAL") final String walkspeed,
-            @RequestParam(value = "source", defaultValue = "None") final String source) throws IOException {
+            @RequestParam(value = "source", defaultValue = "None") final String source
+    ) throws IOException {
+
         NetworkProvider provider = resolver.getSource(source);
+
         final Location fromLocation = new Location(LocationType.STATION, from, null, null);
         final Location toLocation = new Location(LocationType.STATION, to, null, null);
-
-        Date date;
-        SimpleDateFormat format = new SimpleDateFormat("dd.MM.yyyy'T'HH:mm:ss");
-
-        try {
-            date = format.parse(when);
-        } catch (ParseException e) {
-            date = new Date();
-        }
 
         ObjectMapper mapper = new ObjectMapper();
         mapper.setSerializationInclusion(JsonInclude.Include.ALWAYS);
         mapper.enable(DeserializationFeature.ACCEPT_EMPTY_STRING_AS_NULL_OBJECT);
 
-        return ResponseEntity.ok().body(mapper.writeValueAsString(provider.queryTrips(fromLocation, null, toLocation, date, true, TripOptionResolver.INSTANCE.optionBuilder(accessibility, optimization, walkspeed))));
+        return ResponseEntity.ok().body(mapper.writeValueAsString(provider.queryTrips(
+                fromLocation,
+                null,
+                toLocation,
+                DateTools.INSTANCE.parseDate(when),
+                true,
+                TripOptionResolver.INSTANCE.optionBuilder(accessibility, optimization, walkspeed)
+        )));
     }
+
+    @RequestMapping(value = "/trips/more", method = RequestMethod.GET, produces = { MediaType.APPLICATION_JSON_VALUE })
+    @ResponseBody
+    public ResponseEntity<QueryTripsResult> more(
+            @RequestParam(value = "source", defaultValue = "None", required = true) final String source,
+            @RequestParam(value = "context", required = true) final QueryTripsContext context,
+            @RequestParam(value = "later", required = false, defaultValue = "true") final Boolean later
+    ) throws IOException {
+        NetworkProvider provider = resolver.getSource(source);
+
+        return ResponseEntity.ok(provider.queryMoreTrips(context, later));
+    }
+
 
 }
