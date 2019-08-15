@@ -2,102 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15a54322-8679-4d82-8705-cd4009d2cc67" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules/service/public-transport-enabler-tpt.service.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/dto/StyleTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/dto/TripTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/AbstractNavitiaProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/AbstractProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/AustraliaProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/AvvAachenProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/AvvAugsburgProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/AvvProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/BayernProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/BritishColumbiaProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/BsvagProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/BvgProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/CmtaProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/DbProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/DingProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/DsbProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/DubProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/EireannProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/FinlandProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/FranceNorthEastProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/FranceNorthWestProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/FranceSouthEastProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/FranceSouthWestProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/GhanaProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/GvhProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/InvgProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/ItalyProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/KvvProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/LinzProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/LuProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/MassachusettsProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/MerseyProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/MvgProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/MvvProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/NasaProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/NegentweeProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/NicaraguaProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/NsProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/NvbwProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/NvvProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/NzProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/OebbProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/OntarioProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/OoevvProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/OregonProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/ParisProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/PlNavitiaProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/PlProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/QuebecProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/RtProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/RtaChicagoProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/SbbProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/SeProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/ShProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/SncbProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/SpainProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/StvProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/SvvProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/SydneyProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/TfiProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/TlemProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VaoProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VbbProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VblProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VbnProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VgnProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VgsProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VmobilProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VmsProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VmtProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VmvProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VorProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VrnProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VrrProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VrsProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VvmProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VvoProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VvsProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VvtProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/VvvProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/WienProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/ZvvProviderLiveTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/live/secrets.properties.template" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/util/HttpClientTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/util/Iso8601Format.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enabler/test/thepublictransport/schildbach/pte/util/PolylineFormatTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/source/SourceResolver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/source/SourceResolver.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/DepartureController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/DepartureController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/LocationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/LocationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/TripController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/TripController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -249,7 +154,7 @@
       <workItem from="1564808955166" duration="562000" />
       <workItem from="1564813982354" duration="519000" />
       <workItem from="1565285454224" duration="899000" />
-      <workItem from="1565719822384" duration="7904000" />
+      <workItem from="1565719822384" duration="8682000" />
     </task>
     <servers />
   </component>
