@@ -35,12 +35,11 @@ import java.util.Date;
 public class DepartureController {
     private SourceResolver resolver = new SourceResolver();
 
-    @Cacheable(value = "requests", key = "#query + #source + #hourshift.toString() + #limit.toString() + #equiv.toString()", sync = true)
     @RequestMapping(value = "/departure", method = RequestMethod.GET)
     @ResponseBody
     public ResponseEntity<QueryDeparturesResult> suggest(@RequestParam("stationId") final String query,
                                          @RequestParam(value = "source", defaultValue = "None", required = false) final String source,
-                                         @RequestParam(value = "hourshift", required = false, defaultValue = "2") final int hourshift,
+                                         @RequestParam(value = "hourshift", required = false, defaultValue = "0") final int hourshift,
                                          @RequestParam(value = "limit", required = false, defaultValue = "10") final int limit,
                                          @RequestParam(value = "equiv", required = false) final boolean equiv
     ) throws IOException {
