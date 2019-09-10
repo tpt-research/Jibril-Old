@@ -17,7 +17,7 @@
 
 package thepublictransport.schildbach.pte.service.rest;
 
-import java.util.EnumSet;
+import java.util.*;
 
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.ResponseEntity;
@@ -56,8 +56,8 @@ public class LocationController {
     public ResponseEntity<NearbyLocationsResult> nearby(
             @RequestParam(value = "source", defaultValue = "None", required = false) final String source,
             @RequestParam(value = "types", required = false, defaultValue = "ANY") final EnumSet<LocationType> types,
-            @RequestParam("lat") final double lat,
-            @RequestParam("lon") final double lon,
+            @RequestParam(value = "lat") final double lat,
+            @RequestParam(value = "lon") final double lon,
             @RequestParam(value = "maxDistance", required = false, defaultValue = "5000") final Integer maxDistance,
             @RequestParam(value = "maxLocations", required = false, defaultValue = "100") final Integer maxLocations
 
@@ -66,7 +66,9 @@ public class LocationController {
         NetworkProvider provider = resolver.getSource(source);
         final Location coord = Location.coord(Point.fromDouble(lat, lon));
 
-        return ResponseEntity.ok().body(provider.queryNearbyLocations(types, coord, maxDistance, maxLocations));
+        NearbyLocationsResult result = provider.queryNearbyLocations(types, coord, maxDistance, maxLocations);
+
+        return ResponseEntity.ok().body(result);
 
     }
 }

@@ -75,7 +75,22 @@ public class TripController {
         mapper.setSerializationInclusion(JsonInclude.Include.ALWAYS);
         mapper.enable(DeserializationFeature.ACCEPT_EMPTY_STRING_AS_NULL_OBJECT);
 
-        return ResponseEntity.ok().body(mapper.writeValueAsString(provider.queryTrips(fromLocation, null, toLocation, date, true, TripOptionResolver.INSTANCE.optionBuilder(accessibility, optimization, walkspeed))));
+        return ResponseEntity.ok().body(
+                mapper.writeValueAsString(
+                        provider.queryTrips(
+                                fromLocation,
+                                null,
+                                toLocation,
+                                date,
+                                true,
+                                TripOptionResolver.INSTANCE.optionBuilder(
+                                        accessibility,
+                                        optimization,
+                                        walkspeed
+                                )
+                        )
+                )
+        );
     }
 
     @Cacheable(value = "requests", key = "{#from + #to + #when + #accessibility + #optimization + #walkspeed + #source}", sync = true)
@@ -101,14 +116,22 @@ public class TripController {
         mapper.setSerializationInclusion(JsonInclude.Include.ALWAYS);
         mapper.enable(DeserializationFeature.ACCEPT_EMPTY_STRING_AS_NULL_OBJECT);
 
-        return ResponseEntity.ok().body(mapper.writeValueAsString(provider.queryTrips(
-                fromLocation,
-                null,
-                toLocation,
-                DateTools.INSTANCE.parseDate(when),
-                true,
-                TripOptionResolver.INSTANCE.optionBuilder(accessibility, optimization, walkspeed)
-        )));
+        return ResponseEntity.ok().body(
+                mapper.writeValueAsString(
+                        provider.queryTrips(
+                            fromLocation,
+                            null,
+                            toLocation,
+                            DateTools.INSTANCE.parseDate(when),
+                            true,
+                            TripOptionResolver.INSTANCE.optionBuilder(
+                                    accessibility,
+                                    optimization,
+                                    walkspeed
+                            )
+                        )
+                )
+        );
     }
 
     @RequestMapping(value = "/trips/more", method = RequestMethod.GET, produces = { MediaType.APPLICATION_JSON_VALUE })

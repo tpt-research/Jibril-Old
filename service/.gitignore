@@ -3,3 +3,4 @@
 /.settings/
 /bin/
 /src/main/java/thepublictransport/schildbach/pte/service/framework/api/APIKeys.kt
+/.idea

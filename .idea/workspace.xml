@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="15a54322-8679-4d82-8705-cd4009d2cc67" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/service/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/DepartureController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/DepartureController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/LocationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/LocationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/TripController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/rest/TripController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,9 +34,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Kotlin Object" />
         <option value="Kotlin Class" />
         <option value="Kotlin File" />
+        <option value="Kotlin Object" />
       </list>
     </option>
   </component>
@@ -57,22 +62,23 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="experimental" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/api" />
-    </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="thepublictransport.schildbach.pte.service.framework.keystore" />
       <recent name="thepublictransport.schildbach.pte.service.framework.api" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/service/src/main/java/de/schildbach/pte/service/rest/RMV_NVV" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="thepublictransport.schildbach.pte.service.rest" />
       <recent name="thepublictransport.schildbach.pte" />
       <recent name="de.schildbach.pte.live" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/service/src/main/java/de/schildbach/pte/service/rest/RMV_NVV" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/service/src/main/java/thepublictransport/schildbach/pte/service/framework/api" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -155,6 +161,9 @@
       <workItem from="1564813982354" duration="519000" />
       <workItem from="1565285454224" duration="899000" />
       <workItem from="1565719822384" duration="8682000" />
+      <workItem from="1568039218734" duration="1472000" />
+      <workItem from="1568043558604" duration="3225000" />
+      <workItem from="1568106356730" duration="4807000" />
     </task>
     <servers />
   </component>
