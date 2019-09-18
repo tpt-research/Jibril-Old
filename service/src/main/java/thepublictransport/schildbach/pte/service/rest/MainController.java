@@ -52,7 +52,7 @@ public class MainController {
     @RequestMapping(value = "/", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.MOVED_PERMANENTLY)
     public RedirectView main() {
-        String correctUrl = "https://github.com/thepublictransport";
+        String correctUrl = "https://thepublictransport.de/web/";
         RedirectView rv = new RedirectView(correctUrl);
         rv.setStatusCode(HttpStatus.MOVED_PERMANENTLY);
         return rv;
