@@ -25,16 +25,15 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Provider implementation for SNCF (France)
+ * Provider implementation for Von AnachB (Austria)
  * 
  * @author Tristan Marsell
  *
  */
-public final class SncfProvider extends AbstractHafasClientInterfaceProvider {
-    private static final HttpUrl API_BASE = HttpUrl.parse("https://sncf-maps.hafas.de/bin/maps-ng");
+
+public final class Anachbprovider extends AbstractHafasClientInterfaceProvider {
+    private static final HttpUrl API_BASE = HttpUrl.parse("https://anachb.vor.at/bin/");
     private static final Product[] PRODUCTS_MAP = { Product.HIGH_SPEED_TRAIN,
-            Product.HIGH_SPEED_TRAIN,
-            Product.HIGH_SPEED_TRAIN,
             Product.REGIONAL_TRAIN,
             Product.SUBURBAN_TRAIN,
             Product.BUS,
@@ -43,18 +42,18 @@ public final class SncfProvider extends AbstractHafasClientInterfaceProvider {
             Product.TRAM,
             Product.ON_DEMAND,
             null, null, null, null };
-    private static final String DEFAULT_API_CLIENT = "{\"id\":\"SNCF_LIVEMAP\",\"type\":\"WEB\",\"name\":\"webapp\",\"l\":\"vs_webapp\"}";
+    private static final String DEFAULT_API_CLIENT = "{\"id\": \"VAO\",\"type\":\"WEB\",\"name\":\"webapp\"}";
 
-    public SncfProvider(final String apiAuthorization, final byte[] salt) {
-        this(DEFAULT_API_CLIENT, apiAuthorization, salt);
+    public Anachbprovider(final String apiAuthorization) {
+        this(DEFAULT_API_CLIENT, apiAuthorization);
     }
 
-    public SncfProvider(final String apiClient, final String apiAuthorization, final byte[] salt) {
-        super(NetworkId.SNCF, API_BASE, PRODUCTS_MAP);
-        setApiVersion("1.18");
+    public Anachbprovider(final String apiClient, final String apiAuthorization) {
+        super(NetworkId.ANACHB, API_BASE, PRODUCTS_MAP);
+        setApiVersion("1.20");
+        setApiExt("VAO.10");
         setApiClient(apiClient);
         setApiAuthorization(apiAuthorization);
-        setRequestChecksumSalt(salt);
     }
 
     @Override

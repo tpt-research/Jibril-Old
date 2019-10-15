@@ -176,6 +176,9 @@ class SourceResolver {
             "SNCF" -> {
                 return SncfProvider("{\"type\":\"AID\",\"aid\":\"hf7mcf9bv3nv8g5f\"}", "nrk8rrrgkawnxwww".toByteArray(Charsets.UTF_8))
             }
+            "AnachB" -> {
+                return Anachbprovider("{\"type\": \"AID\",\"aid\": \"wf7mcf9bv3nv8g5f\"}")
+            }
         }
         return getSourceNavitia(source)
     }
