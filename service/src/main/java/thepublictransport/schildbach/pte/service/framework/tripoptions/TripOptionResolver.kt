@@ -6,8 +6,7 @@ import thepublictransport.schildbach.pte.dto.TripOptions
 
 object TripOptionResolver {
 
-    fun optionBuilder(accessibility: String, optimization: String, walkspeed: String): TripOptions {
-        val product_finalized : Set<Product> = Product.ALL
+    fun optionBuilder(products: Set<Product>, accessibility: String, optimization: String, walkspeed: String): TripOptions {
         var accessibility_finalized : NetworkProvider.Accessibility = NetworkProvider.Accessibility.NEUTRAL
         var optimization_finalized : NetworkProvider.Optimize = NetworkProvider.Optimize.LEAST_DURATION
         var walkspeed_finalized: NetworkProvider.WalkSpeed = NetworkProvider.WalkSpeed.NORMAL
@@ -32,6 +31,6 @@ object TripOptionResolver {
             walkspeed_finalized = NetworkProvider.WalkSpeed.FAST
 
 
-        return TripOptions(product_finalized, optimization_finalized, walkspeed_finalized, accessibility_finalized, null)
+        return TripOptions(products, optimization_finalized, walkspeed_finalized, accessibility_finalized, null)
     }
 }

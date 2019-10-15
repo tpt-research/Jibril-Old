@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component
 @Component
 object GarbageCollector {
 
-    @Scheduled(fixedDelay = 300000, initialDelay = 1000)
+    @Scheduled(fixedDelay = 30000, initialDelay = 1000)
     fun emptyCachePeriodically() {
         CacheManagement.discardAllCache()
     }

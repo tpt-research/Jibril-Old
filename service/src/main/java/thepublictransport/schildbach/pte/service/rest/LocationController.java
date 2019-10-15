@@ -17,14 +17,14 @@
 
 package thepublictransport.schildbach.pte.service.rest;
 
-import java.util.*;
-
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import thepublictransport.schildbach.pte.NetworkProvider;
 import thepublictransport.schildbach.pte.dto.*;
 import thepublictransport.schildbach.pte.service.framework.source.SourceResolver;
+
+import java.util.EnumSet;
 
 /**
  * @author Andreas Schildbach

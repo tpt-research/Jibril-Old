@@ -17,11 +17,6 @@
 
 package thepublictransport.schildbach.pte.service.rest;
 
-import java.io.IOException;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -35,6 +30,12 @@ import thepublictransport.schildbach.pte.service.framework.source.SourceResolver
 import thepublictransport.schildbach.pte.service.framework.tools.DateTools;
 import thepublictransport.schildbach.pte.service.framework.tripoptions.TripOptionResolver;
 
+import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Set;
+
 /**
  * @author Andreas Schildbach
  * @author Tristan Marsell
@@ -44,7 +45,9 @@ import thepublictransport.schildbach.pte.service.framework.tripoptions.TripOptio
 public class TripController {
     private SourceResolver resolver = new SourceResolver();
 
-    @Cacheable(value = "requests", key = "{#from + #to + #when + #accessibility + #optimization + #walkspeed + #source}", sync = true)
+     Set<Product> allProducts = Product.ALL;
+
+    @Cacheable(value = "requests", key = "{#from + #to + #when + #products.toArray().toString() + #accessibility + #optimization + #walkspeed + #source}", sync = true)
     @RequestMapping(value = "/trips/name", method = RequestMethod.GET, produces = { MediaType.APPLICATION_JSON_VALUE })
     @ResponseBody
     @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -52,6 +55,7 @@ public class TripController {
             @RequestParam(value = "from", required = false) final String from,
             @RequestParam(value = "to", required = false) final String to,
             @RequestParam(value = "when", required = false) final String when,
+            @RequestParam(value = "products", required = false, defaultValue = "") final Set<Product> products,
             @RequestParam(value = "accessibility", required = false, defaultValue = "NEUTRAL") final String accessibility,
             @RequestParam(value = "optimization", required = false, defaultValue = "LEAST_DURATION") final String optimization,
             @RequestParam(value = "walkspeed", required = false, defaultValue = "NORMAL") final String walkspeed,
@@ -84,6 +88,7 @@ public class TripController {
                                 date,
                                 true,
                                 TripOptionResolver.INSTANCE.optionBuilder(
+                                        !products.isEmpty() ? products : Product.ALL,
                                         accessibility,
                                         optimization,
                                         walkspeed
@@ -93,14 +98,16 @@ public class TripController {
         );
     }
 
-    @Cacheable(value = "requests", key = "{#from + #to + #when + #accessibility + #optimization + #walkspeed + #source}", sync = true)
+    @Cacheable(value = "requests", key = "{#from + #to + #when + #products.toArray().toString() + #accessibility + #optimization + #walkspeed + #source}", sync = true)
     @RequestMapping(value = "/trips/id", method = RequestMethod.GET, produces = { MediaType.APPLICATION_JSON_VALUE })
     @ResponseBody
     @JsonInclude(JsonInclude.Include.NON_NULL)
     public ResponseEntity<String> tripId(
             @RequestParam(value = "from", required = false) final String from,
             @RequestParam(value = "to", required = false) final String to,
+            @RequestParam(value = "via", required = false) final String via,
             @RequestParam(value = "when", required = false) final String when,
+            @RequestParam(value = "products", required = false, defaultValue = "") final Set<Product> products,
             @RequestParam(value = "accessibility", required = false, defaultValue = "NEUTRAL") final String accessibility,
             @RequestParam(value = "optimization", required = false, defaultValue = "LEAST_DURATION") final String optimization,
             @RequestParam(value = "walkspeed", required = false, defaultValue = "NORMAL") final String walkspeed,
@@ -125,6 +132,7 @@ public class TripController {
                             DateTools.INSTANCE.parseDate(when),
                             true,
                             TripOptionResolver.INSTANCE.optionBuilder(
+                                    !products.isEmpty() ? products : Product.ALL,
                                     accessibility,
                                     optimization,
                                     walkspeed

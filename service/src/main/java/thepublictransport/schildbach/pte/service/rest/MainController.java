@@ -17,29 +17,12 @@
 
 package thepublictransport.schildbach.pte.service.rest;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.databind.DeserializationFeature;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.view.RedirectView;
-import thepublictransport.schildbach.pte.NetworkProvider;
-import thepublictransport.schildbach.pte.dto.Location;
-import thepublictransport.schildbach.pte.dto.LocationType;
-import thepublictransport.schildbach.pte.dto.QueryTripsContext;
-import thepublictransport.schildbach.pte.dto.QueryTripsResult;
-import thepublictransport.schildbach.pte.service.framework.source.SourceResolver;
-import thepublictransport.schildbach.pte.service.framework.tools.DateTools;
-import thepublictransport.schildbach.pte.service.framework.tripoptions.TripOptionResolver;
-
-import java.io.IOException;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 /**
  * @author Andreas Schildbach
