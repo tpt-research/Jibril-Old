@@ -25,23 +25,21 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Provider implementation for Deutsche Bahn (Germany).
+ * Provider implementation for SNCF (France)
  * 
  * @author Tristan Marsell
  * WIP
  */
 public final class SncfProvider extends AbstractHafasClientInterfaceProvider {
-    private static final HttpUrl API_BASE = HttpUrl.parse("https://sncf-maps.hafas.de/bin/");
-    private static final Product[] PRODUCTS_MAP = { Product.HIGH_SPEED_TRAIN, // ICE-Züge
-            Product.HIGH_SPEED_TRAIN, // Intercity- und Eurocityzüge
-            Product.HIGH_SPEED_TRAIN, // Interregio- und Schnellzüge
-            Product.REGIONAL_TRAIN, // Nahverkehr, sonstige Züge
-            Product.SUBURBAN_TRAIN, // S-Bahn
-            Product.BUS, // Busse
-            Product.FERRY, // Schiffe
-            Product.SUBWAY, // U-Bahnen
-            Product.TRAM, // Straßenbahnen
-            Product.ON_DEMAND, // Anruf-Sammeltaxi
+    private static final HttpUrl API_BASE = HttpUrl.parse("https://sncf-maps.hafas.de/bin/maps-ng");
+    private static final Product[] PRODUCTS_MAP = { Product.HIGH_SPEED_TRAIN,
+            Product.REGIONAL_TRAIN,
+            Product.SUBURBAN_TRAIN,
+            Product.BUS,
+            Product.FERRY,
+            Product.SUBWAY,
+            Product.TRAM,
+            Product.ON_DEMAND,
             null, null, null, null };
     private static final String DEFAULT_API_CLIENT = "{\"id\":\"SNCF_LIVEMAP\",\"type\":\"WEB\",\"name\":\"webapp\",\"l\":\"vs_webapp\"}";
 
@@ -55,5 +53,36 @@ public final class SncfProvider extends AbstractHafasClientInterfaceProvider {
         setApiClient(apiClient);
         setApiAuthorization(apiAuthorization);
         setRequestChecksumSalt(salt);
+    }
+
+    @Override
+    public Set<Product> defaultProducts() {
+        return Product.ALL;
+    }
+
+    private static final Pattern P_SPLIT_NAME_ONE_COMMA = Pattern.compile("([^,]*), ([^,]*)");
+
+    @Override
+    protected String[] splitStationName(final String name) {
+        final Matcher m = P_SPLIT_NAME_ONE_COMMA.matcher(name);
+        if (m.matches())
+            return new String[] { m.group(2), m.group(1) };
+        return super.splitStationName(name);
+    }
+
+    @Override
+    protected String[] splitPOI(final String poi) {
+        final Matcher m = P_SPLIT_NAME_FIRST_COMMA.matcher(poi);
+        if (m.matches())
+            return new String[] { m.group(1), m.group(2) };
+        return super.splitStationName(poi);
+    }
+
+    @Override
+    protected String[] splitAddress(final String address) {
+        final Matcher m = P_SPLIT_NAME_FIRST_COMMA.matcher(address);
+        if (m.matches())
+            return new String[] { m.group(1), m.group(2) };
+        return super.splitStationName(address);
     }
 }
