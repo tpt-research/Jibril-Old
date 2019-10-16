@@ -188,6 +188,12 @@ class SourceResolver {
             "ArrivaUK" -> {
                 return Arrivaukprovider("{\"type\": \"AID\", \"aid\": \"a4r2b3i8x2n9f6l0\"}")
             }
+            "HVV" -> {
+                return Hvvprovider("{\"aid\": \"andcXUmC9Mq6hjrwDIGd2l3oiaMrTUzyH\", \"type\": \"AID\"}", "ktlwfW4vVOf/LwJ4wsnENvzRQZf3WS9b1RMPbIQNEOw=".toByteArray(Charsets.UTF_8))
+            }
+            "Irishrail" -> {
+                return Irishrailprovider("{\"type\": \"AID\", \"aid\": \"ip3nv8g5f7mcf9bv\"}")
+            }
         }
         return getSourceNavitia(source)
     }
