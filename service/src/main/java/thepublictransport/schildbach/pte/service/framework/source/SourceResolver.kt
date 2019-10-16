@@ -182,6 +182,9 @@ class SourceResolver {
             "VBN" -> {
                 return VbnProvider("{\"type\":\"AID\",\"aid\":\"nitaggzkjk5s2Grl\"}")
             }
+            "BART" -> {
+                return BartProvider("{\"type\": \"AID\", \"aid\": \"kEwHkFUCIL500dym\"}")
+            }
         }
         return getSourceNavitia(source)
     }
