@@ -185,6 +185,9 @@ class SourceResolver {
             "BART" -> {
                 return BartProvider("{\"type\": \"AID\", \"aid\": \"kEwHkFUCIL500dym\"}")
             }
+            "ArrivaUK" -> {
+                return Arrivaukprovider("{\"type\": \"AID\", \"aid\": \"a4r2b3i8x2n9f6l0\"}")
+            }
         }
         return getSourceNavitia(source)
     }

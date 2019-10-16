@@ -58,7 +58,7 @@ public enum NetworkId {
     LU,
 
     // United Kingdom
-    TLEM, MERSEY,
+    TLEM, MERSEY, ARRIVAUK,
 
     // Ireland
     TFI, EIREANN,
