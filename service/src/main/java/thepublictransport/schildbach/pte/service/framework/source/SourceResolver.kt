@@ -179,6 +179,9 @@ class SourceResolver {
             "AnachB" -> {
                 return Anachbprovider("{\"type\": \"AID\",\"aid\": \"wf7mcf9bv3nv8g5f\"}")
             }
+            "VBN" -> {
+                return VbnProvider("{\"type\":\"AID\",\"aid\":\"nitaggzkjk5s2Grl\"}")
+            }
         }
         return getSourceNavitia(source)
     }

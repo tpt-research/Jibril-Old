@@ -42,7 +42,7 @@ import okhttp3.HttpUrl;
  * @author Andreas Schildbach
  */
 public class VbnProvider extends AbstractHafasClientInterfaceProvider {
-    private static final HttpUrl API_BASE = HttpUrl.parse("https://fahrplaner.vbn.de/hafas/");
+    private static final HttpUrl API_BASE = HttpUrl.parse("https://fahrplaner.vbn.de/bin/");
     private static final Product[] PRODUCTS_MAP = { Product.HIGH_SPEED_TRAIN, // ICE
             Product.HIGH_SPEED_TRAIN, // IC / EC / CNL
             Product.HIGH_SPEED_TRAIN, // IR, sonstiger Schnellzug
@@ -54,18 +54,17 @@ public class VbnProvider extends AbstractHafasClientInterfaceProvider {
             Product.TRAM, // Straßen-/ Stadtbahn
             Product.ON_DEMAND // Anrufverkehr
     };
-    private static final String DEFAULT_API_CLIENT = "{\"id\":\"VBN\",\"type\":\"AND\"}";
+    private static final String DEFAULT_API_CLIENT = "{\"id\":\"VBN\",\"type\":\"WEB\",\"name\":\"webapp\",\"l\":\"vs_vbn\"}";
 
-    public VbnProvider(final String apiAuthorization, final byte[] salt) {
-        this(DEFAULT_API_CLIENT, apiAuthorization, salt);
+    public VbnProvider(final String apiAuthorization) {
+        this(DEFAULT_API_CLIENT, apiAuthorization);
     }
 
-    public VbnProvider(final String apiClient, final String apiAuthorization, final byte[] salt) {
+    public VbnProvider(final String apiClient, final String apiAuthorization) {
         super(NetworkId.VBN, API_BASE, PRODUCTS_MAP);
-        setApiVersion("1.18");
+        setApiVersion("1.24");
         setApiClient(apiClient);
         setApiAuthorization(apiAuthorization);
-        setRequestMicMacSalt(salt);
         setStyles(STYLES);
     }
 
