@@ -194,6 +194,9 @@ class SourceResolver {
             "Irishrail" -> {
                 return Irishrailprovider("{\"type\": \"AID\", \"aid\": \"ip3nv8g5f7mcf9bv\"}")
             }
+            "OOEVV" -> {
+                return OoevvProvider("{\"type\": \"AID\", \"aid\": \"wf7mcf9bv3nv8g5f\"}")
+            }
         }
         return getSourceNavitia(source)
     }
