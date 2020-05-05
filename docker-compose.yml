@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  tptservice:
+    image: pdesire/tptservice
+    build: .
+    ports:
+      - "4823:4823"
