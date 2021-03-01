@@ -1,3 +1,5 @@
+# The new Service is available [here](https://github.com/ZweiDev/Shibi)
+
 Welcome to Public Transport Enabler, a Java library allowing you to get data from public transport providers.
 
 This project contains several subprojects:
